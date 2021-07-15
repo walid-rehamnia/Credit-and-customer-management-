@@ -1,0 +1,163 @@
+﻿
+body{
+    background-color:rgb(43, 156, 156);
+    border-style: ridge;
+ border-width: thick;
+ border-radius:20px 20px 30px 30px;
+ direction:rtl;
+ 
+}
+.header{
+    margin-top: 1%;
+    text-align: center;
+    border-style: outset;
+    border-width: medium;
+background-color:rgba(238, 255, 0, 0.76);
+font-size: 100%;
+width: 80%;
+border-radius:0px 0px 100px 100px;
+}
+
+
+.sign_in
+{
+    border: solid;
+    margin-top: 5%;
+    text-align: center;
+    border-style:none;
+    border-width: thick;
+    background-color: rgba(255, 136, 0, 0.911);
+    width: 350px;
+    border-radius:20px 20px 20px 20px;
+    padding: 0.5%;
+    margin-bottom: 1%;
+    font-weight: bolder;
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.788);
+}
+
+h1
+{
+    text-shadow: 3px 2px red;
+}
+
+table
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%;
+    text-align: center;
+}
+
+.sign_in input,select{
+    border:ridge;
+    direction: rtl;
+    border-radius:10px 10px 10px 10px;
+    text-align: center;
+    color: rgb(4, 0, 255);
+    width:80%;
+    font-size: 100%;
+    padding: 2%;
+    margin-top: 4%;
+    font-weight: bolder;
+}
+
+
+td{
+    font-weight: bold;
+    border-radius:10px 10px 10px 10px;
+    background-color:rgba(238, 255, 0, 0.829);
+    width:15%;
+    padding: 1.2%;
+}
+
+.fullNav{
+    background-color: rgb(43, 156, 156);
+    padding-bottom: 0%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.mainNavigationBar{
+    background-color: #b6d6e8;
+    margin-left:0%;
+    margin-right:0%;
+    padding: 1%;
+    padding-left:15%;
+    list-style-type: none;
+    overflow: hidden;
+    font-family: fantasy;
+    border-radius: 10%;
+    margin-bottom: 0%;
+}
+
+.subNavigationBar{
+    margin-top: 0%;
+    background-color: #4299ed;
+    overflow: hidden;
+    padding: 1%;
+    margin-right:0%;
+    margin-left:13%;
+    display: block;
+}
+li{
+    float:inline-start;
+    padding: inherit;
+    border-right: solid;
+    text-align: center;
+}
+.normalNavMain{
+    background-color: #b6d6e8;
+    color: black;
+    font-size: 100%;
+    font-weight: lighter;
+    padding-bottom: 1.5%;
+    text-decoration: none;
+}
+.overNavMain{
+    background-color: #4299ed;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#sub{
+    width: 25%;
+    color: rgb(255, 0, 0);
+    font-family: fantasy;
+    background-color: rgba(21, 255, 0, 0.658);
+}
+a{
+    color: black;
+}
+
+
+#modalWindow {
+    position: fixed;
+    font-family: arial,helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 400ms linear;
+    pointer-events: none;
+}
+#modalWindow:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#modalWindow > div {
+    width: 400px;
+    height: 240px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px 20px 13px 20px;
+    border: solid;
+    border-color: black;
+    border-width : 2px;
+    background: #DAF7A6;
+    border-radius: 10px;
+}

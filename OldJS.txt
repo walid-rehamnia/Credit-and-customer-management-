@@ -1,0 +1,95 @@
+
+var mainArray = ['«·“»‹‹«∆‰','«·Õ”‹«»« ','«·‹„‹“Ì‹œ','Õ‹‹‹‹‹‹Ê·'];
+var navIl = document.getElementsByClassName("normalNavMain");
+var form  = document.getElementsByClassName("sign_in")[0];
+//Navigation bar events
+var ch = ['<ul class="subNavigationBar"><li class="a"><a href="http://localhost/credit/add_client.php" target="_blank"> ≈÷«›… “»Ê‰</a></li>' +
+    '<li class="a"><a href="http://localhost/credit/admin_client.php" target="_blank">ﬁ«∆„… «·“»«∆‰</a></li></ul>' , '<ul class="subNavigationBar"><li class="a"><a href="" target="_blank">≈÷«›… Õ”«»</a></li>' +
+    '<li class="a"><a href="" target="_blank">ﬁ«∆„… «·Õ”«»« </a></li></ul>',"   ﬁ—Ì»«"," „ »›÷· «··Â „‰ ÿ—› —Õ«„‰Ì… Ê·Ìœ"];
+
+var sub = document.getElementById("subList");
+sub.setAttribute("margin","10%");
+
+for (let i = 0; i <4; i++) {
+
+    navIl[i].onmouseover = function () {
+        this.setAttribute("class", "overNavMain");
+        //this.innerHTML=mainArray[i]+ch;
+        sub.innerHTML='<ul class="subNavigationBar">'+ch[i]+'</ul>';
+        form.setAttribute("style","margin-top: -0.5%;");
+    }
+
+    navIl[i].onmouseout	 = function () {
+        this.setAttribute("class", "normalNavMain");
+        //this.innerHTML=mainArray[i];
+        form.setAttribute("style","margin-top: 5%;");
+        myInterval2 = setTimeout('sub.innerHTML="";form.setAttribute("style","margin-top: 5%;");',1200);
+    }
+
+}
+
+//Events for tables 
+alert("go to hell");
+var tab = document.getElementsByTagName("td");
+let n = tab.length;
+for(let i=0;i<n;i++){
+tab[i].onmouseover = function(){
+    this.setAttribute("class", "overNavMain");
+}
+tab[i].onmouseleave = function(){
+    this.setAttribute("class", "normalNavMain");
+}
+}//end of for loop
+
+/*if (confirm('Je vais dire sur quel bouton vous avez appuyÈ : '))
+ {alert(' Sur OK \n Continuez avec :') }
+ else {alert(' Sur Annuler \n Sortez avec Ok !') };
+ */
+/*fille=open('', '', 'height=50, width=300, status=yes');
+ fille.document.write('<title>' + 'Titre fenetre fille' +
+ '</title>');
+ fille.document.write('Texte dans la fenÍtre fille');*/
+/*
+ var search = document.getElementById("search");
+ let users = document.getElementById("users");
+ search.onclick=function() {
+ choices = ['walid','youness','ali'];
+ let n = choices.length;
+ var i =0;
+ for(i=0;i<n;i++)
+ {
+ users.innerHTML+="<li>"+choices[i]+"</li>";
+ }
+ };
+
+document.body.onclick=function(event) {
+    if(event.target!=input)
+      options.style.display='none';
+}
+
+
+input.onclick=function() {
+    this.value='';
+      options.style.display='block';
+}
+
+
+for(i=0;i<choices.length;i++) {
+   options.getElementsByTagName('li')[i].onclick = function(){
+
+       input.value= this.textContent;
+
+    }    
+
+
+}
+ /*
+ var selectedVal = "";
+ var selected = $("input[type='radio'][name='s_2_1_6_0']:checked");
+ if (selected . length > 0) {
+ selectedVal = selected . val();
+ }
+ document.writeln(selectedVal);
+ */
+
+
