@@ -129,13 +129,13 @@ if(isset($_POST['download'])){
         header("Content-disposition: attachment; filename=\"".$backup_name."\"");  
         echo $content;
         //tO SEND THE EMAIL 
-        $to = 'elnajehlibrary@gmail.com';
+        $to = 'receiver@gmail.com';
         $subject = 'Backup File';
         $message = $content; 
-        $from = 'rehamniawalid.info@gmail.com';
+        $from = 'sender@gmail.com';
          
         // Sending email
-        if(mail($to, $subject, $message,'From: elnajehlibrary@gmail.com')){
+        if(mail($to, $subject, $message,'From: receiver@gmail.com')){
             echo 'Your mail has been sent successfully.';
         } else{
             echo 'Unable to send email. Please try again.';
